@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Viewing Files</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">All Uploaded Files</h1>
+    <br />
+    <div style="text-align: center">
+      <table border = 1>
+        <thead>
+          <td>Id</td>
+          <td>Name</td>
+          <td>Plaintiffs</td>
+          <td>Defendants</td>
+        </thead>
+        
+        {% for row in rows %}
+          <tr>
+            <td>{{row[0]}}</td>
+            <td>{{row[1]}}</td>
+            <td>{{row[2]}}</td>
+            <td>{{row[3]}}</td>
+           </tr>
+        {% endfor %}
+      </table>
+    </div>
+    <br />
+    <a href = "/">Go back to home page</a>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>
+      HomePage
+    </title>
+  </head>
+  <body>
+    <div>
+      <h1>Reading and Storing Files</h1>
+      <p>Upload an xml file down below, it will store plaintiff and defendant information.
+        You can view that stored information here: <a href="{{ url_for('files') }}"> All Files</a>
+      </p>
+    </div>
+    <div style="margin: auto; border: black 1px;">
+      <h2>Upload new File</h2>
+      <form method=post enctype=multipart/form-data>
+        <input type=file name=file>
+        <input type=submit value=Upload>
+      </form>
+    </div>
+  </body>
+</html>
